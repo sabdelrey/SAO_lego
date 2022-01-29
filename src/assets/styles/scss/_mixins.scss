@@ -1,0 +1,31 @@
+@use 'variables';
+
+@mixin button($color) {
+    background-color: $color;
+    border: none;
+    border-radius: 5px;
+    font-family: variables.$font-text;
+    padding: 15px;
+}
+
+@mixin button_interaction($background-color, $text-border-color) {
+    &:hover {
+        background-color: $background-color;
+        border: 2px solid $text-border-color;
+        color: $text-border-color;
+        padding: 13px;
+    }
+
+    &:active {
+        font-weight: bold;
+    }
+
+    &:focus {
+        background-color: $background-color;
+        border: 2px solid $text-border-color;
+        color: $text-border-color;
+        font-weight: bold;
+        padding: 13px;
+        outline: none;
+    }
+}

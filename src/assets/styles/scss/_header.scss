@@ -1,0 +1,285 @@
+@use 'variables';
+@use 'mixins';
+@use 'placeholders';
+
+header {
+    display: grid;
+    grid-template-rows: 51px 52px;
+
+    @media #{variables.$large-plus} {
+        grid-template-rows: 55px 75px;
+    }
+
+    .header_banner_wrapper {
+        background-color: #dcf3fa;
+    }
+
+    .header_wrapper {
+        background-color: variables.$color-primary;
+    }
+
+    .icon_btn {
+        @extend %button_icon;
+
+        &:hover {
+            color: variables.$color-tertiary;
+        }
+
+        &:active {
+            color: variables.$color-white;
+        }
+
+        &:focus {
+            color: variables.$color-white;
+            outline-color: variables.$color-tertiary;
+        }
+    }
+
+    a {
+        @extend %lien_interaction;
+    }
+    
+    .header_banner {
+        background-color: #dcf3fa;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 18px 20px;
+        max-width: 1920px;
+
+        @media #{variables.$large-plus} {
+            padding: 10px 20px;
+        }
+
+        &_btn {
+            display: none;
+            font-size: 14px;
+            
+            &:hover {
+                background-color: variables.$color-white;
+                border: 2px solid variables.$color-tertiary;
+                color: variables.$color-tertiary;
+                padding: 8px;
+            }
+
+            &:active {
+                font-weight: bold;
+            }
+
+            &:focus {
+                background-color: variables.$color-white;
+                border: 2px solid variables.$color-tertiary;
+                color: variables.$color-tertiary;
+                font-weight: bold;
+                padding: 8px;
+                outline: none;
+            }
+
+            @media #{variables.$large-plus} {
+                @include mixins.button(variables.$color-tertiary);
+
+                color: variables.$color-white;
+                display: block;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+        }
+        
+        &_text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            @media #{variables.$large-plus} {
+                width: 50%;
+            }
+        }
+
+        &_icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .icon_btn {
+                span {
+                    display: none;
+
+                    @media #{variables.$large-plus} {
+                        display: inline;
+                        font-family: variables.$font-text;
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .fa-smile, .fa-star {
+                display: none;
+    
+                @media #{variables.$large-plus} {
+                    display: inline;
+                    margin-left: 20px;
+                }
+            }
+
+            .fermer_header_banner_icon {
+                margin-left: 30px;
+
+                @media #{variables.$large-plus} {
+                    display: none;  
+                }
+            }
+        }      
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 6px 20px;
+        max-width: 1920px;
+        
+        @media #{variables.$large-plus} {
+            padding: 10px 20px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon_with_number {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media #{variables.$large-plus} {
+                flex-direction: row;
+            }
+
+            .icon_btn {
+                margin: 4px 10px 3px;
+
+                @media #{variables.$large-plus} {
+                    margin: 10px 10px 10px 20px;
+                }
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+        .smile {
+            margin: 0 10px;
+
+            @media #{variables.$large-plus} {
+                display: none;
+            }
+        }
+
+        .search {
+            margin-right: 10px;
+
+            @media #{variables.$large-plus} {
+                background-color: variables.$color-white;
+                border-radius: 50%;
+                margin-right: 0;
+                padding: 10px;
+            }
+        }
+
+        .ouvrir_nav_icon {
+
+            @media #{variables.$large-plus} {
+                display: none;
+            }
+        }
+    }
+
+    .logo_container {
+        background-color: #000;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 0 20px;
+        height: 40px;
+        width: 40px;
+
+        @media #{variables.$large-plus} {
+            height: 55px;
+            width: 55px;
+        }
+
+        img {
+            width: 40px;
+
+            @media #{variables.$large-plus} {
+                width: 55px;
+            }
+        }
+    }
+}
+
+nav {
+    display: none;
+
+    @media #{variables.$large-plus} {
+        display: block;
+    }
+
+    .fermer_nav_icon {
+        display: none;
+        float: right;
+        padding: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 20px;
+
+        @media #{variables.$large-plus} {
+            padding: 0;
+        }
+        
+        li {
+            padding: 5px 0;
+
+            @media #{variables.$large-plus} {
+                display: inline;
+                padding: 10px;
+
+                a {
+                    color: #000;
+                    font-family: variables.$font-title;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 0 3px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+            
+                    &:hover {
+                        color: variables.$color-tertiary;
+                        text-decoration: 2px solid underline variables.$color-tertiary;
+                    }
+            
+                    &:active {
+                        background-color: variables.$color-white;
+                    }
+            
+                    &:focus {
+                        background-color: variables.$color-white;
+                        color: variables.$color-tertiary;
+                        text-decoration: 2px solid underline variables.$color-tertiary;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

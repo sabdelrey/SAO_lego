@@ -1,0 +1,26 @@
+@use 'variables';
+
+%button_icon {
+    background-color: transparent;
+    border: none;
+}
+
+%lien_interaction {
+    color: variables.$color-tertiary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: 1px solid underline;
+    }
+
+    &:active {
+        font-weight: bold;
+        text-decoration: 2px solid underline;
+    }
+    
+    &:focus {
+        font-weight: bold;
+        text-decoration: 2px solid underline;
+        outline: none;
+    }
+}

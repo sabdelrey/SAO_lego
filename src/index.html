@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAO</title>
+    <link rel="stylesheet" href="assets/styles/css/styles.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header_banner_wrapper">
+            <div class="header_banner">
+                <button class="header_banner_btn"><i class="fas fa-arrow-left"></i>&emsp;Voir les jeux</button>
+                <div class="header_banner_text">
+                    <button class="icon_btn" aria-label="Précédent"><i class="fas fa-chevron-left fa-lg"></i></button>
+                    <p>Découvrez la marchandise promotionnelle</p>
+                    <a href="javascript:;">Acheter</a>
+                    <button class="icon_btn" aria-label="Suivant"><i class="fas fa-chevron-right fa-lg"></i></button>
+                </div>
+                <div class="header_banner_icons">
+                    <button class="icon_btn"><i class="far fa-smile fa-lg"></i><span>Compte</span></button>
+                    <button class="icon_btn"><i class="far fa-star fa-lg"></i><span>Favoris</span></button>
+                    <button class="icon_btn" aria-label="Fermer"><i class="fas fa-times fa-lg fermer_header_banner_icon"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="header_wrapper">
+            <div class="header">
+                <div> 
+                    <button class="icon_btn ouvrir_nav_icon" aria-label="Ouvrir la navigation"><i class="fas fa-bars fa-2x"></i></button>
+                    <div class="logo_container">
+                        <img src="assets/img/logo.png" alt="Logo Swort Art Online">
+                    </div>
+                    <nav>
+                        <button class="icon_btn fermer_nav_icon" aria-label="Fermer la navigation"><i class="fas fa-times"></i></button>
+                        <ul>
+                            <li><a href="#personnages">Les personnages</a></li>
+                            <li><a href="#saisons">Les saisons</a></li>
+                            <li><a href="#mondes">Les mondes virtuels</a></li>
+                            <li><a href="#jeux">Les jeux</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <button class="icon_btn search" aria-label="Rechercher"><i class="fas fa-search fa-lg"></i></button>
+                    <button class="icon_btn smile" aria-label="Compte"><i class="far fa-smile fa-lg"></i></button>
+                    <div class="icon_with_number">
+                        <button class="icon_btn" aria-label="Liste de souhait"><i class="far fa-heart fa-lg"></i></button>
+                        <span>0</span>
+                    </div>
+                    <div class="icon_with_number"> 
+                        <button class="icon_btn" aria-label="Panier d'achat"><i class="fas fa-shopping-basket fa-lg"></i></button>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner_one">
+            <picture>
+                <source id="img_big" media="(min-width:600px)" srcset="assets/img/banner_one_big.png">
+                <img id="img_small" src="assets/img/banner_one_small.png" alt="Kirito et Asuna devant un paysage de plaines et de montagnes">
+            </picture>
+            <div class="banner_one_contenu">
+                <h1>Sword Art Online</h1>
+                <p>La série Sword Art Online se déroule dans différents jeux vidéo d'immersion virtuelle appelés <abbr title="Virtual Reality Multi Massively Online Role Playing Game">VRMMORPG</abbr>. Elle est basée sur les mangas écrits par Reki Kawahara.</p>
+                <div class="button_container">
+                    <button>Regarder la série&emsp;<i class="fas fa-chevron-right"></i></button>
+                    <button>Acheter les mangas&emsp;<i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="mangas">
+            <figure>
+                <img src="assets/img/aincrad_manga.png" alt="Page couverture du manga">
+                <figcaption>Aincrad mangas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/fairy_manga.png" alt="Page couverture du manga">
+                <figcaption>Fairy Dance mangas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/phantom_manga.png" alt="Page couverture du manga">
+                <figcaption>Phantom Bullet mangas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/calibur_manga.png" alt="Page couverture du manga">
+                <figcaption>Calibur mangas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/rosario_manga.png" alt="Page couverture du manga">
+                <figcaption>Mother's Rosario mangas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/progressive_manga.png" alt="Page couverture du manga">
+                <figcaption>Progressive mangas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/alicization_manga.png" alt="Page couverture du manga">
+                <figcaption>Project Alicization mangas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/img/ordinal_manga.png" alt="Page couverture du manga">
+                <figcaption>Ordinal Scale mangas</figcaption>
+            </figure>
+        </section>
+        <section id="personnages">
+            <h2>Les personnages</h2>
+            <div class="flex-container">
+                <div>
+                    <figure>
+                        <img src="assets/img/kirito.png" alt="Jeune homme aux cheveux et vêtements noirs">
+                        <figcaption lang="ja">桐ヶ谷 和人</figcaption>
+                    </figure>
+                    <p>Kirito</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/asuna.png" alt="Jeune femme aux longs cheveux roux et un ensemble rouge et blanc">
+                        <figcaption lang="ja">結城 明日奈</figcaption>
+                    </figure>
+                    <p>Asuna</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/eugeo.png" alt="Jeune homme blond aux yeux bleus portant un chandail bleu">
+                        <figcaption lang="ja">ユージオ</figcaption>
+                    </figure>
+                    <p>Eugeo</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/alice.png" alt="Jeune femme blonde aux yeux bleus portant une couronne">
+                        <figcaption lang="ja">アリス・ツーベルク</figcaption>
+                    </figure>
+                    <p>Alice</p>
+                    <button>En savoir plus</button>
+                </div>
+                <button class="round_btn" aria-label="Suivant"><i class="fas fa-chevron-right fa-2x"></i></button>
+            </div>
+            <div class="scrollbar"></div>
+        </section>
+        <section id="saisons">
+            <h2>Les saisons</h2>
+            <div class="flex-container">
+                <div>
+                    <figure>
+                        <img src="assets/img/saison1.jpg" alt="Quatre personnages de la saison sous leur avatar de jeu">
+                        <figcaption>Sword Art Online</figcaption>
+                    </figure>
+                    <p>Les joueurs sont coincés dans un jeu de réalité virtuelle.</p>
+                    <p><a href="javascript:;">Regarder la saison</a>&emsp;<i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/saison2.png" alt="Groupe de personnage de la saison sous leur avatar de fée">
+                        <figcaption>Sword Art Online II</figcaption>
+                    </figure>
+                    <p>Les joueurs meurent dans la vraie vie lorsqu'ils sont tués dans le jeu.</p>
+                    <p><a href="javascript:;">Regarder la saison</a>&emsp;<i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/saison3.jpg" alt="Trois personnages principaux de la saison sous leur avatar virtuel">
+                        <figcaption>Sword Art Online&nbsp;: Alicization</figcaption>
+                    </figure>
+                    <p>Des intelligences artificielles vivent dans un monde virtuel qu'ils croient être réel.</p>
+                    <p><a href="javascript:;">Regarder la saison</a>&emsp;<i class="fas fa-chevron-right"></i></p>
+                </div>
+            </div>    
+        </section>
+        <section id="mondes">
+            <h2>Les mondes virtuels</h2>
+            <div class="flex-container">
+                <div>
+                    <figure>
+                        <img src="assets/img/sao.png" alt="Chevalier au bord d'une falaise devant un chateau lointain flottant au-dessus des montagnes">
+                        <figcaption>Sword Art Online</figcaption>
+                    </figure>
+                    <p>Le jeu se déroule dans un château flottant de 100 étages appelé Aincrad.</p>
+                    <p><a href="javascript:;">En apprendre plus</a>&emsp;<i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/alfheim.png" alt="Arbre blanc géant qui monte jusqu'au ciel situé au centre d'un grand royaume composé de lacs et de montagnes">
+                        <figcaption>ALfheim Online</figcaption>
+                    </figure>
+                    <p>Le jeu se déroule dans un royaume de fées.</p>
+                    <p><a href="javascript:;">En apprendre plus</a>&emsp;<i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/gungale.png" alt="Ville détruite et déserte aux allures post-apocalyptiques">
+                        <figcaption>Gun Gale Online</figcaption>
+                    </figure>
+                    <p>Le jeu se déroule sur une Terre post-apocalyptique déserte.</p>
+                    <p><a href="javascript:;">En apprendre plus</a>&emsp;<i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/underworld.png" alt="Royaume situé à l'intérieur d'un grand mur en forme de cercle et divisé en quatre quadrants avec une tour qui trône au centre">
+                        <figcaption>Underworld</figcaption>
+                    </figure>
+                    <p>Monde virtuel créé pour développer une nouvelle forme d'intelligence artificielle.</p>
+                    <p><a href="javascript:;">En apprendre plus</a>&emsp;<i class="fas fa-chevron-right"></i></p>
+                </div>
+            </div>
+        </section>
+        <section class="banner_two">
+            <img src="assets/img/banner_two.jpg" alt="Bannière promotionnelle de la saison 3">
+            <div class="banner_two_contenu">
+                <p>La dernière saison est sortie!</p>
+                <div class="button_container">
+                    <button>Regarder les épisodes&emsp;<i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="jeux">
+            <h2>Les jeux</h2>
+            <div class="flex-container">
+                <div>
+                    <figure>
+                        <img src="assets/img/infinity_game.jpg" alt="Couverture de la pochette de jeu">
+                        <figcaption>SAO&nbsp;: Infinity Moment</figcaption>
+                    </figure>
+                    <p>PSP</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/hollowfrag_game.jpg" alt="Couverture de la pochette de jeu">
+                        <figcaption>SAO&nbsp;: Hollow Fragment</figcaption>
+                    </figure>
+                    <p>PS Vita</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/lostsong_game.jpg" alt="Couverture de la pochette de jeu">
+                        <figcaption>SAO&nbsp;: Lost Song</figcaption>
+                    </figure>
+                    <p>PS4</p>
+                    <button>En savoir plus</button>
+                </div>
+                <div>
+                    <figure>
+                        <img src="assets/img/hollowrea_game.jpg" alt="Couverture de la pochette de jeu">
+                        <figcaption>SAO&nbsp;: Hollow Realization</figcaption>
+                    </figure>
+                    <p>PS Vita</p>
+                    <button>En savoir plus</button>
+                </div>
+                <button class="round_btn" aria-label="Suivant"><i class="fas fa-chevron-right fa-2x"></i></button>
+            </div>
+            <div class="scrollbar"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="logo">
+                <div class="logo_container">
+                    <img src="assets/img/logo.png" alt="Logo Sword Art Online">
+                </div>
+                <button>Changer la langue</button>
+                <div class="logo_liens">
+                    <p><a href="javascript:;">Boutique en ligne</a></p>
+                    <p><a href="javascript:;">Nouvelles</a></p>
+                </div>
+            </div>
+            <form action="#" id="formulaireInfolettre" method="get" target="_blank">
+                <label for="courriel">Abonnez-vous à notre infolettre</label>
+                <input type="email" id="courriel" name="courriel" placeholder="Votre adresse courriel">
+                <button type="submit" aria-label="Soumettre"><i class="fas fa-chevron-right fa-lg"></i></button>
+            </form>
+            <div class="accordeon_wrapper">
+                <div class="accordeon">
+                    <h3>À propos <span><i class="fas fa-chevron-down"></i></span></h3>
+                    <ul>
+                        <li><a href="javascript:;">Auteur&nbsp;: Reki Kawahara</a></li>
+                        <li><a href="javascript:;">Illustrateur&nbsp;: abec</a></li>
+                        <li><a href="javascript:;">Éditeur&nbsp;: ASCII Media Works</a></li>
+                        <li><a href="javascript:;">Studio&nbsp;: A-1 Pictures</a></li>
+                    </ul>
+                </div>
+                <div class="accordeon">
+                    <h3>Support <span><i class="fas fa-chevron-down"></i></span></h3>
+                    <ul>
+                        <li><a href="javascript:;">Contactez-nous</a></li>
+                        <li><a href="javascript:;">Aide</a></li>
+                        <li><a href="javascript:;">Questions fréquentes</a></li>
+                    </ul>
+                </div>
+                <div class="accordeon">
+                    <h3>Streamer la série <span><i class="fas fa-chevron-down"></i></span></h3>
+                    <ul>
+                        <li><a href="javascript:;">Crunchyroll</a></li>
+                        <li><a href="javascript:;">Funimation</a></li>
+                        <li><a href="javascript:;">Wakanim</a></li>
+                    </ul>
+                </div>
+                <div class="accordeon">
+                    <h3 class="last">Communauté <span><i class="fas fa-chevron-down"></i></span></h3>
+                    <ul>
+                        <li><a href="javascript:;">Fandom Wiki</a></li>
+                        <li><a href="javascript:;">Discord</a></li>
+                        <li><a href="javascript:;">Reddit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reseaux_sociaux">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="javascript:;" title="Page Facebook"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                    <li><a href="javascript:;" title="Page Twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li><a href="javascript:;" title="Page Instagram"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    <li><a href="javascript:;" title="Page Youtube"><i class="fab fa-youtube fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <div class="liens_legaux">
+                <ul>
+                    <li><a href="javascript:;">Politique de confidentialité</a></li>
+                    <li><a href="javascript:;">Témoins</a></li>
+                    <li><a href="javascript:;">Avis juridique</a></li>
+                    <li><a href="javascript:;">Conditions d'utilisation</a></li>
+                    <li><a href="javascript:;">Accessibilité</a></li>
+                    <li><a href="javascript:;">Paramètre des témoins</a></li>
+                </ul>
+            </div>
+            <div class="texte_legal">
+                <p>Texte en jargon légal sur la marque Sword Art Online. Les droits d'auteurs appartiennent à Reki Kawahara. Publié par ASCII Media Works et réalisé par A-1 Pictures. Tous droits réservés. L'utilisation de ce site implique que vous en acceptez les conditions générales d'utilisation.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="assets/scripts/vendors/main.js"></script>
+</body>
+</html>

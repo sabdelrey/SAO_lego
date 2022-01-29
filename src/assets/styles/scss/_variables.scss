@@ -1,0 +1,20 @@
+@use 'fonts';
+
+$color-primary: #a0def1;
+$color-secondary: #5ac2e6;
+$color-tertiary: #00a1dd;
+$color-background: #edf6f9;
+$color-white: #fff;
+
+$font-title: 'Saira Condensed Bold', sans-serif;
+$font-text: 'Barlow Regular', sans-serif;
+
+$medium: 600px;
+$large: 900px;
+$xlarge: 1200px;
+$xxlarge: 1500px;
+
+$medium-plus: '(min-width: #{$medium})';
+$large-plus: '(min-width: #{$large})';
+$xlarge-plus: '(min-width: #{$xlarge})';
+$xxlarge-plus: '(min-width: #{$xxlarge})';

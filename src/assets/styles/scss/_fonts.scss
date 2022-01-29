@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Barlow Regular';
+    src: url('../../fonts/barlow-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/barlow-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow Bold';
+    src: url('../../fonts/barlow-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/barlow-bold-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Saira Condensed Bold';
+    src: url('../../fonts/sairacondensed-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/sairacondensed-bold-webfont.woff') format('woff');
+}
